@@ -1,6 +1,6 @@
 </div><!-- /.row -->
 
-
+<div class="container-flud p-2 bg-white">
 <footer class="page-footer font-small text-light bg-dark pt-4">
     <div class="container">
         <div class="row mb-1">

@@ -9,8 +9,7 @@
 </head>
 
 <body <?php body_class(); ?>>
-    
-        <div class="container-flud ml-4 mr-4 p-2 bg-white">
+    <div class="container-flud p-2 bg-white">
         <?php if (!function_exists('dynamic_sidebar') || !dynamic_sidebar("header top")) : ?>
         <?php endif; ?>
         <section class="header">
@@ -23,14 +22,11 @@
                     }
 
                     ?>
-
                 </div>
                 <div class="col-sm-6 pt-4">
                     <?php wp_nav_menu(array('theme_location' => 'primary')); ?>
                 </div>
             </div>
         </section>
-
-
-
-        <div class="row border border-gray m-2 p-2">
+    </div>
+    <div class="row border border-gray m-2 p-2">

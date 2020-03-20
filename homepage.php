@@ -4,15 +4,12 @@ Template Name: Home Page layout
 */
 ?>
 <?php get_header(); ?>
-<div class="col-sm-12 blog-main">
-
+<div class="row">
     <?php
     if (have_posts()) {
         while (have_posts()) : the_post();
     ?>
             <div class="blog-post">
-                <!--  <h2 class="blog-post-title"><?php the_title(); ?></h2>
-      <p class="blog-post-meta"><?php the_date(); ?> by <?php the_author(); ?></p> -->
                 <?php the_content(); ?>
                 <?php the_post(); ?>
             </div><!-- /.blog-post -->
@@ -22,9 +19,8 @@ Template Name: Home Page layout
     ?>
     <div class="col-12">
         <div class="card text-white bg-dark align-items-center">
-            <h2 class="text-light p-3" style="font-size: 35px; font-weight: 800;">Latest News and Events</h2>
+            <h2 class="h2 text-light p-3">Latest News and Events</h2>
         </div>
-    
     <?php
     $args = array(
         'post_type' => 'post',
@@ -42,9 +38,9 @@ Template Name: Home Page layout
             <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
                 
                 <header class="entry-header">
-                    <h2 class="h2 entry-title text-white bg-primary mt-2 text-center"><?php the_title(); ?></h1>
+                    <h2 class="h3 entry-title text-white bg-primary mt-2 text-center"><?php the_title(); ?></h1>
                 </header>
-                <div class="text-white bg-primary p-3">
+                <div class="text-white bg-primary p-3 text-justify">
                     <?php the_content(); ?>
                 </div>
             </article>
