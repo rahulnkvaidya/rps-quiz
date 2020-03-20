@@ -27,7 +27,7 @@
                     <script>
                         document.write(new Date().getFullYear());
                     </script>
-                    All rights reserved | Powered by - <a href="https://www.rpsrobosoft.com">RPS Robosoft Technologies</a>
+                    All rights reserved | Powered by - <a href="https://www.rpsrobosoft.com">RPS Robosoft Technologies v1.3</a>
                 </p>
             </div>
         </div>
