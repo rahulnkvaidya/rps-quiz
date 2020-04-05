@@ -2,7 +2,7 @@
 
 function themename_custom_logo_setup() {
     $defaults = array(
-    'height'      => 100,
+    'height'      => 150,
     'width'       => 400,
     'flex-height' => true,
     'flex-width'  => true,
@@ -17,7 +17,7 @@ function themename_custom_logo_setup() {
   // 	function shoreditch_setup() {
   // 		// Enable support for custom logo.
   // 	add_theme_support( 'custom-logo', array(
-  // 		'height'      => 100,
+  // 		'height'      => 150,
   // 		'width'       => 400,
   // 		'flex-height' => true,
   // 	) );
