@@ -5,7 +5,7 @@ Template Name: AboutUs layout
 ?>
 <?php get_header(); ?>
 <div class="col-12 m-0 p-0">
-
+<?php echo "about page layout"; ?>
     <section class="hero-wrap hero-wrap-2" style="background-image:url('<?php bloginfo('stylesheet_directory') ?>/assets/images/IMG_20190627.jpg'); ">
         <div class="col-12 align-self-center  mx-auto" style="padding-top: 75px; padding-left: 45px;">
             <h1 class="mb-2 bread text-light">About Us</h1>

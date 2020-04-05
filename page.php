@@ -4,30 +4,29 @@ Template Name: Page layout
 */
 ?>
 <?php get_header(); ?>
-<div class="col-sm-8 blog-main">
-
+<div class="row p-3">
+<div class="col-8 p-3">
+   <div class="col-12 p-3 shadow">
     <?php
     if (have_posts()) {
         while (have_posts()) : the_post();
     ?>
-            <div class="col-12">
-                <h1 class="jumbotron p-4 mt-3">
-                    <?php the_title(); ?>
+            <div class="blog-post m-0">
+                <h1 class="jumbotron p-4">
+                    <?php  the_title(); ?>
                 </h1>
-                <?php the_content(); ?>
+                <?php  the_content(); ?>
             </div><!-- /.blog-post -->
     <?php
         endwhile;
     }
     ?>
-    <nav aria-label="Page navigation">
-        <ul class="pagination">
-            <li class="page-item"><?php next_posts_link('Previous'); ?></li>
-            <li class="page-item"><?php previous_posts_link('Next'); ?></li>
-        </ul>
-    </nav>
 
+    <?php if (!function_exists('dynamic_sidebar') || !dynamic_sidebar("home page content")) : ?>
+    <?php endif; ?>
 
+	</div>
 </div><!-- /.blog-main -->
 <?php get_sidebar(); ?>
+</div>
 <?php get_footer(); ?>

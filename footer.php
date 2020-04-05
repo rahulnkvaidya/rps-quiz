@@ -1,8 +1,8 @@
 </div><!-- /.row -->
 
-<div class="container-flud p-2 bg-white">
-<footer class="page-footer font-small text-light bg-dark pt-4">
-    <div class="container">
+<div class="container-flud bg-white">
+<footer class="col-12 font-small text-light bg-dark pt-4">
+  
         <div class="row mb-1">
             <div class="col-md-6 col-lg-4">
                 <div class="block-23 mb-3">
@@ -31,10 +31,10 @@
                 </p>
             </div>
         </div>
-    </div>
+    
 </footer>
 
-</div><!-- /.container -->
+</div>
 <?php wp_footer(); ?>
 </body>
 
